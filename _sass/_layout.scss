@@ -2,10 +2,17 @@
 /* LAYOUT / SECTIONS */
 /*********************/
 
+.page-container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 60px 20px 80px;
+  width: 100%;
+}
+
 .container {
   margin: 0 auto;
   max-width: 740px;
-  padding: 0 20px 80px;
+  padding: 0 10px;
   width: 100%;
 }
 

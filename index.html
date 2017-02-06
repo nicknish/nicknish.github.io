@@ -2,65 +2,103 @@
 layout: default
 ---
 
-<section class="page-title">
-  <h1 class="homepage-title">Nick Nish</h1>
-  <h2 class="homepage-subtitle">Creative Developer</h2>
-</section>
-
-<section class="homepage-hero">
-  <img width="homepage-hero-image" src="https://unsplash.it/200/300/?random" />
-</section>
+<header class="homepage-section homepage-header text-center">
+  <h1 class="page-title page-title--homepage">Nick Nish</h1>
+  <h2 class="page-subtitle page-subtitle--homepage">Creative Developer</h2>
+</header>
 
 <section class="homepage-section">
+  <div class="homepage-hero-container">
+    <img width="homepage-hero-image" src="https://unsplash.it/200/300/?random" />
+  </div>
+</section>
+
+<section class="homepage-section homepage-about">
   <h2 class="section-header">About</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reprehenderit vero, veritatis iure, quas voluptates sunt sapiente enim obcaecati aspernatur dolores. Itaque hic, esse sapiente adipisci atque culpa ipsum. Dolorem.</p>
 </section>
 
 <hr>
 
-<section class="homepage-section">
+<section class="homepage-section homepage-works">
   <h2 class="section-header"><a href="#">Work</a></h2>
 
-  <div class="work-item">
-    <div class="work-image-container">
-      <div class="work-image-header"></div>
-      <img class="work-image" src="https://unsplash.it/200/300/?random" />
+  <div class="work-items">
+    <div class="work-item">
+      <div class="work-image-container">
+        <div class="work-image-header">
+          <div class="work-image-dots">
+            <div class="work-image-dot"></div>
+            <div class="work-image-dot"></div>
+            <div class="work-image-dot"></div>
+          </div>
+          <div class="work-image-bar"></div>
+        </div>
+        <img class="work-image" src="https://unsplash.it/200/300/?random" />
+      </div>
+      <h3 class="work-title"><a href="#">Bonsai</a></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias quos illo ea, dicta earum excepturi deserunt veniam repudiandae ipsa libero vel eum repellendus, vitae reprehenderit non, natus. At, tempore!</p>
     </div>
-    <h3 class="work-title"><a href="#">Bonsai</a></h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias quos illo ea, dicta earum excepturi deserunt veniam repudiandae ipsa libero vel eum repellendus, vitae reprehenderit non, natus. At, tempore!</p>
+
+    <div class="work-item">
+      <div class="work-image-container">
+        <div class="work-image-header">
+          <div class="work-image-dots">
+            <div class="work-image-dot"></div>
+            <div class="work-image-dot"></div>
+            <div class="work-image-dot"></div>
+          </div>
+          <div class="work-image-bar"></div>
+        </div>
+        <img class="work-image" src="https://unsplash.it/200/300/?random" />
+      </div>
+      <h3 class="work-title"><a href="#">BloomNation</a></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias quos illo ea, dicta earum excepturi deserunt veniam repudiandae ipsa libero vel eum repellendus, vitae reprehenderit non, natus. At, tempore!</p>
+    </div>
   </div>
 
-  <div class="work-item">
-    <div class="work-image-container">
-      <div class="work-image-header"></div>
-      <img class="work-image" src="https://unsplash.it/200/300/?random" />
-    </div>
-    <h3 class="work-title"><a href="#">BloomNation</a></h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias quos illo ea, dicta earum excepturi deserunt veniam repudiandae ipsa libero vel eum repellendus, vitae reprehenderit non, natus. At, tempore!</p>
+  <div class="text-center">
+    <a href="#" class="btn btn-success">See More Work</a>
   </div>
-
-  <div class="btn btn-success">See More Work</div>
 </section>
 
 <hr>
 
-<section class="homepage-section">
+<section class="homepage-section homepage-labs">
   <h2 class="section-header">Labs</h2>
-  <p>Experiments conducted here. Expect shenanigans.</p>
-  <div class="btn btn-success">Back to the Lab!</div>
+  <p class="text-center mbl">Experiments conducted here. Expect shenanigans.</p>
+  <div class="text-center">
+    <a href="#" class="btn btn-success">Back to the Lab!</a>
+  </div>
 </section>
 
 <hr>
 
-<section class="homepage-section text-center">
+<footer class="homepage-section homepage-contact text-center">
   <h2 class="section-header">Contact</h2>
-  <p>Drop me a line</p>
-  <a href="mailto:nickjnish@gmail.com">nickjnish@gmail.com</a>
-  <p>You can find me on</p>
-  <div><a href="mailto:nickjnish@gmail.com">github.com/nicknish</a></div>
-  <div><a href="//codepen.io/nicknish">codepen.io/nicknish</a></div>
-  <div><a href="//linkedin.com/in/nicknish">linkedin.com/in/nicknish</a></div>
-</section>
+  <nav>
+    <div class="mbl">
+      <p>Drop me a line</p>
+      <a class="homepage-contact-link homepage-contact-link--main" href="mailto:nickjnish@gmail.com">nickjnish@gmail.com</a>
+    </div>
+    <div class="mbl">
+      <p>You can find me on</p>
+      <div class="mbxs">
+        <a class="homepage-contact-link" href="mailto:nickjnish@gmail.com">github.com/nicknish</a>
+      </div>
+      <div class="mbxs">
+        <a class="homepage-contact-link" href="//codepen.io/nicknish">codepen.io/nicknish</a>
+      </div>
+      <div class="mbxs">
+        <a class="homepage-contact-link" href="//linkedin.com/in/nicknish">linkedin.com/in/nicknish</a>
+      </div>
+    </div>
+    <div>
+      <p>Also</p>
+      <a href="#" class="homepage-contact-link">My Resume</a>
+    </div>
+  </nav>
+</footer>
 
 <!-- <div class="posts">
   {% for post in site.posts %}

@@ -2,6 +2,14 @@
 /* LAYOUT / SECTIONS */
 /*********************/
 
+.container {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 20px 80px;
+  width: 100%;
+}
+
+
 //
 // .masthead
 //
@@ -66,32 +74,32 @@
   }
 }
 
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  // font-family: $helveticaNeue;
-  font-size: 18px;
+// nav {
+//   float: right;
+//   margin-top: 23px; // @TODO: Vertically middle align
+//   // font-family: $helveticaNeue;
+//   font-size: 18px;
 
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
+//   @include mobile {
+//     float: none;
+//     margin-top: 9px;
+//     display: block;
+//     font-size: 16px;
+//   }
 
-  a {
-    margin-left: 20px;
-    // color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+//   a {
+//     margin-left: 20px;
+//     // color: $darkGray;
+//     text-align: right;
+//     font-weight: 300;
+//     letter-spacing: 1px;
 
-    @include mobile {
-      margin: 0 10px;
-      // color: $blue;
-    }
-  }
-}
+//     @include mobile {
+//       margin: 0 10px;
+//       // color: $blue;
+//     }
+//   }
+// }
 
 //
 // .main
@@ -137,4 +145,12 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+}
+
+// Section
+
+.section-header {
+  font-size: 30px;
+  line-height: 1;
+  margin: 0 0 35px;
 }

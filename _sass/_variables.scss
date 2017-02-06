@@ -1,25 +1,31 @@
 
-//
-// VARIABLES
-//
+// Font stacks
+
+$headerFonts: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$paragraphFonts: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 
 // Colors
-$blue: #4183C4;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
 $white: #fff;
 
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$grey-4: #444;
+$grey-6: #666;
+$grey-8: #8F8E8B;
+$grey-9: #979797;
+$grey-d: #d8d8d8;
+$grey-e: #E6EBEF;
+$grey-f: #f7f7f7;
 
-// Mobile breakpoints
+$orange: #FDA469;
+$yellow: #F5D088;
+
+$success: $yellow;
+
+
+
+// Breakpoints
+
 @mixin mobile {
   @media screen and (max-width: 640px) {
     @content;

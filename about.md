@@ -4,12 +4,16 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+## Hey there! 👋
 
-### More Information
+I'm Nick Nish, a passionate programmer with several years of experience. Besides tinkering, I love product, design, brand building. I live in Los Angeles, CA currently working on contract.
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm a programmer and lifelong student.
 
-### Contact me
+I aim to be deeply happy. My life's joy is in being a lifelong learner.
 
-[email@domain.com](mailto:email@domain.com)
+I have a wonderful family and girlfriend.
+
+Here's what I'm up to [now](/now).
+
+[Email me a question or say hello!](mailto:nickjnish@gmail.com)

@@ -1,0 +1,34 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  min-height: 40px;
+  max-width: 100%;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: $headerFonts;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: normal;
+  word-break: break-word;
+  -webkit-font-smoothing: auto;
+  background: $grey-e;
+  color: $white;
+  transition: all .2s ease;
+  &:focus, &:visited {
+    color: $white;
+  }
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    background: $grey-d;
+  }
+}
+
+.btn-success {
+  background: $success;
+  &:hover {
+    background: darken($success, 10%);
+  }
+}

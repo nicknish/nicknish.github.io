@@ -14,14 +14,14 @@ layout: default
 </section>
 
 <section class="homepage-section homepage-about">
-  <h2 class="section-header">About</h2>
+  <h2 class="section-header"><a href="{{ site.navigation.about }}">About</a></h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reprehenderit vero, veritatis iure, quas voluptates sunt sapiente enim obcaecati aspernatur dolores. Itaque hic, esse sapiente adipisci atque culpa ipsum. Dolorem.</p>
 </section>
 
 <hr>
 
 <section class="homepage-section homepage-works">
-  <h2 class="section-header"><a href="#">Work</a></h2>
+  <h2 class="section-header"><a href="{{ site.navigation.work }}">Work</a></h2>
 
   <div class="work-items">
     <div class="work-item">
@@ -37,7 +37,7 @@ layout: default
         <img class="work-image" src="{% asset_path jekyll-logo.png %}" />
       </div>
       <div class="work-description">
-        <h3 class="work-title"><a href="#">Bonsai</a></h3>
+        <h3 class="work-title"><a href="{{ site.navigation.work }}/bonsai">Bonsai</a></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias quos illo ea, dicta earum excepturi deserunt veniam repudiandae ipsa libero vel eum repellendus, vitae reprehenderit non, natus. At, tempore!</p>
       </div>
     </div>
@@ -55,14 +55,14 @@ layout: default
         <img class="work-image" src="{% asset_path jekyll-logo.png %}" />
       </div>
       <div class="work-description">
-        <h3 class="work-title"><a href="#">BloomNation</a></h3>
+        <h3 class="work-title"><a href="{{ site.navigation.work }}/bloomnation">BloomNation</a></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias quos illo ea, dicta earum excepturi deserunt veniam repudiandae ipsa libero vel eum repellendus, vitae reprehenderit non, natus. At, tempore!</p>
       </div>
     </div>
   </div>
 
   <div class="text-center">
-    <a href="#" class="btn btn-success">See More Work</a>
+    <a href="{{ site.navigation.work }}" class="btn btn-success">See More Work</a>
   </div>
 </section>
 
@@ -72,7 +72,7 @@ layout: default
   <h2 class="section-header">Labs</h2>
   <p class="text-center mbl">Experiments conducted here. Expect shenanigans.</p>
   <div class="text-center">
-    <a href="#" class="btn btn-success">Back to the Lab!</a>
+    <a href="{{ site.navigation.labs }}" class="btn btn-success">Back to the Lab!</a>
   </div>
 </section>
 
@@ -80,26 +80,40 @@ layout: default
 
 <footer class="homepage-section homepage-contact text-center">
   <h2 class="section-header">Contact</h2>
-  <nav>
+
+  <nav role="social">
     <div class="mbl">
       <p>Drop me a line</p>
-      <a class="homepage-contact-link homepage-contact-link--main" href="mailto:nickjnish@gmail.com">nickjnish@gmail.com</a>
+      <a class="homepage-contact-link homepage-contact-link--main" href="mailto:{{ site.social.email }}">
+        {{ site.social.email }}
+      </a>
     </div>
+
     <div class="mbl">
       <p>You can find me on</p>
-      <div class="mbxs">
-        <a class="homepage-contact-link" href="mailto:nickjnish@gmail.com">github.com/nicknish</a>
-      </div>
-      <div class="mbxs">
-        <a class="homepage-contact-link" href="//codepen.io/nicknish">codepen.io/nicknish</a>
-      </div>
-      <div class="mbxs">
-        <a class="homepage-contact-link" href="//linkedin.com/in/nicknish">linkedin.com/in/nicknish</a>
-      </div>
+
+      {% if site.social.github %}
+        <div class="mbxs">
+          <a class="homepage-contact-link" href="//github.com/{{ site.social.github }}">github.com/{{ site.social.github }}</a>
+        </div>
+      {% endif %}
+
+      {% if site.social.codepen %}
+        <div class="mbxs">
+          <a class="homepage-contact-link" href="//codepen.io/{{ site.social.codepen }}">codepen.io/{{ site.social.codepen }}</a>
+        </div>
+      {% endif %}
+
+      {% if site.social.linkedin %}
+        <div class="mbxs">
+          <a class="homepage-contact-link" href="//linkedin.com/in/{{ site.social.linkedin }}">linkedin.com/in/{{ site.social.linkedin }}</a>
+        </div>
+      {% endif %}
     </div>
+
     <div>
       <p>Also</p>
-      <a href="#" class="homepage-contact-link">My Resume</a>
+      <a href="{{ site.navigation.resume }}" class="homepage-contact-link">My Resume</a>
     </div>
   </nav>
 </footer>

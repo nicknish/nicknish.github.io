@@ -7,6 +7,6 @@ gem "autoprefixer-rails"
 gem "sprockets-es6"
 gem "font-awesome-sass"
 
-# gem "jemogi"
+gem "jemoji"
 gem "jekyll-sitemap"
 gem "jekyll-feed"

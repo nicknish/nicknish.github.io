@@ -55,10 +55,16 @@
       .work-image-container {
         margin-right: -60px;
       }
+      .work-description {
+        padding-right: 40px;
+      }
     }
     &:nth-child(odd) {
       .work-image-container {
         margin-left: -60px;
+      }
+      .work-description {
+        padding-left: 40px;
       }
     }
   }
@@ -131,7 +137,6 @@
 .work-description {
   @include media-breakpoint-up(sm) {
     flex: auto;
-    padding: 0 20px;
     max-width: 50%;
     text-align: left;
   }

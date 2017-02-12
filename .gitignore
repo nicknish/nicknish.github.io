@@ -5,5 +5,7 @@ _site
 .bundle
 .sass-cache
 .asset-cache
+Gemfile
+Gemfile.lock
 node_modules
 package.json

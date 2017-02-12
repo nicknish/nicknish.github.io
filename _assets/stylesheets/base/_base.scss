@@ -6,14 +6,21 @@
 
 html {
   font-size: 100%;
+  *, *:after, *:before {
+    box-sizing: border-box;
+  }
 }
 
 body {
+  position: relative;
   background: $white;
   font-family: $paragraphFonts;
   font-size: 16px;
   line-height: 1.5;
   color: $grey-4;
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,10 +31,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
 }
 
 h1 {
@@ -83,7 +86,7 @@ ul ul, ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em {
   font-style: italic;
 }
 

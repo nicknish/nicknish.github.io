@@ -152,7 +152,10 @@
 }
 
 .homepage-contact-link {
-  font-family: $headerFonts;
+  font-family: $baseFonts;
   font-weight: 600;
   letter-spacing: 1px;
+  .fonts-loaded & {
+    font-family: $headerFonts;
+  }
 }

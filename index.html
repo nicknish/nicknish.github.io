@@ -9,13 +9,15 @@ layout: default
 
 <section class="homepage-section">
   <div class="homepage-hero-container">
-    <img width="homepage-hero-image" src="{% asset_path jekyll-logo.png %}" />
+    <img class="homepage-hero-image" src="{% asset_path peaceful.png %}" />
   </div>
 </section>
 
 <section class="homepage-section homepage-about">
-  <h2 class="section-header"><a href="{{ site.navigation.about }}">About</a></h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reprehenderit vero, veritatis iure, quas voluptates sunt sapiente enim obcaecati aspernatur dolores. Itaque hic, esse sapiente adipisci atque culpa ipsum. Dolorem.</p>
+  <h2 class="section-header"><a href="{{ site.navigation.about }}">Hey there! 👋</a></h2>
+  <p>I'm Nick, a passion developer with a deep love for creating great products and the craft of telling important stories. Because my love for frontend, I consider myself a frontend developer first, but I’m wonderfully full-stack &mdash; JavaScript, React/Redux, Ruby, Rails, are all fair game.</p>
+  <p>Conversations of product, design, and brand building get me excited.</p>
+  <p>I meditate, learn everyday without fail, and strive to carry joy in everything I do.</p>
 </section>
 
 <hr>
@@ -34,11 +36,12 @@ layout: default
           </div>
           <div class="work-image-bar"></div>
         </div>
-        <img class="work-image" src="{% asset_path jekyll-logo.png %}" />
+        <img class="work-image" src="{% asset_path bonsai.png %}" />
       </div>
       <div class="work-description">
         <h3 class="work-title"><a href="{{ site.navigation.work }}/bonsai">Bonsai</a></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias quos illo ea, dicta earum excepturi deserunt veniam repudiandae ipsa libero vel eum repellendus, vitae reprehenderit non, natus. At, tempore!</p>
+        <p><em>June 2016-Present</em></p>
+        <p>Building on React-Redux on Rails for the freelance management platform.</p>
       </div>
     </div>
 
@@ -52,11 +55,12 @@ layout: default
           </div>
           <div class="work-image-bar"></div>
         </div>
-        <img class="work-image" src="{% asset_path jekyll-logo.png %}" />
+        <img class="work-image" src="{% asset_path bloomnation-mini.png %}" />
       </div>
       <div class="work-description">
         <h3 class="work-title"><a href="{{ site.navigation.work }}/bloomnation">BloomNation</a></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat molestias quos illo ea, dicta earum excepturi deserunt veniam repudiandae ipsa libero vel eum repellendus, vitae reprehenderit non, natus. At, tempore!</p>
+        <p><em>November 2014-December 2015</em></p>
+        <p>Building with PHP, advanced CSS, and JavaScript for the florist web platform.</p>
       </div>
     </div>
   </div>
@@ -69,7 +73,7 @@ layout: default
 <hr>
 
 <section class="homepage-section homepage-labs">
-  <h2 class="section-header">Labs</h2>
+  <h2 class="section-header"><a href="{{ site.navigation.labs }}">Labs</a></h2>
   <p class="text-center mbl">Experiments conducted here. Expect shenanigans.</p>
   <div class="text-center">
     <a href="{{ site.navigation.labs }}" class="btn btn-success">Back to the Lab!</a>
@@ -83,7 +87,7 @@ layout: default
 
   <nav role="social">
     <div class="mbl">
-      <p>Drop me a line</p>
+      <p>Just say hi!</p>
       <a class="homepage-contact-link homepage-contact-link--main" href="mailto:{{ site.social.email }}">
         {{ site.social.email }}
       </a>

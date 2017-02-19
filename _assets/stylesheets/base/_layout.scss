@@ -5,8 +5,12 @@
 .page-container {
   margin: 0 auto;
   max-width: 740px;
-  padding: 80px 20px 80px;
+  padding: 60px 20px 40px;
   width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    padding: 100px 20px 80px;
+  }
 }
 
 .container {

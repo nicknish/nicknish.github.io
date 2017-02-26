@@ -7,14 +7,14 @@ social:
   dribbble:
   facebook:
   flickr:
-  github: nicknish
+  github: https://github.com/nicknish
   instagram:
-  codepen: nicknish
-  linkedin: nicknish
+  codepen: https://codepen.io/nicknish
+  linkedin: https://linkedin.com/in/nicknish
   pinterest:
   rss:
   twitter:
-  stackoverflow: users/2351752/nicknish # e.g. "users/50476/bart-kiers"
+  stackoverflow: http://stackoverflow.com/users/2351752/nicknish # e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
@@ -23,7 +23,7 @@ navigation:
   about: /about
   work: /work
   labs: /labs
-  resume: resume
+  resume: /resume
   now: /now
   blog: https://medium.com/@nicknish
 

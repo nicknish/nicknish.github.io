@@ -16,7 +16,7 @@ body {
   background: $white;
   font-family: $baseFonts;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.7;
   color: $grey-4;
   &.noscroll {
     overflow: hidden;
@@ -26,16 +26,12 @@ body {
   }
 }
 
-p {
-  margin: 10px 0;
-}
-
 a {
   color: $success;
-  text-decoration: none;
   cursor: pointer;
+  transition: color 200ms ease;
   &:hover, &:active {
-    color: $success;
+    color: $success-dark;
   }
 }
 

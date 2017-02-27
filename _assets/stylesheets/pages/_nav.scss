@@ -19,10 +19,20 @@ $bar-spacing: 8px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: background 200ms ease;
+  &:hover {
+    background: rgba(0,0,0,.02);
+  }
 }
 
 .site-nav-item--logo {
   padding: 0 20px;
+  text-decoration: none;
+}
+
+.site-nav-logoContainer {
+  line-height: 1;
+  margin: 0;
   font-size: 26px;
   color: $success;
 }
@@ -109,6 +119,7 @@ $bar-spacing: 8px;
   padding: 0 10px;
   color: white;
   font-weight: 600;
+  text-decoration: none;
   &:hover {
     color: white;
     opacity: 0.8;

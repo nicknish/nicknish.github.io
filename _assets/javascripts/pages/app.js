@@ -2,11 +2,14 @@
 
   var App = {
     init() {
+      this.setVariables();
+      this.loadFonts();
+      this.setEventListeners();
+    },
+    setVariables() {
       this.body = document.body;
       this.menuBtn = document.querySelectorAll('[data-menu-btn]')[0];
       this.menu = document.querySelectorAll('[data-menu]')[0];
-      this.loadFonts();
-      this.setEventListeners();
     },
     loadFonts() {
       var lato = new FontFaceObserver('Lato');

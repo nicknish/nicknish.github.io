@@ -10,7 +10,7 @@
       {{ content }}
     </div>
 
-    {% include analytics.html %}
-    {% js application %}
+    {% js application async %}
+    {% include google_tag_manager_noscript.html %}
   </body>
 </html>

@@ -15,8 +15,10 @@
   -webkit-font-smoothing: auto;
   background: $grey-e;
   color: $white;
-  transition: all .2s ease;
-  &:focus, &:visited {
+  transition: color .2s ease;
+
+  &:focus,
+  &:visited {
     color: $white;
   }
   &:hover {
@@ -32,6 +34,6 @@
 .btn-success {
   background: $success;
   &:hover {
-    background: darken($success, 10%);
+    background: $success-dark;
   }
 }

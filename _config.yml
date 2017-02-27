@@ -9,7 +9,7 @@ social:
   flickr:
   github: https://github.com/nicknish
   instagram:
-  codepen: https://codepen.io/nicknish
+  codepen: http://codepen.io/nicknish
   linkedin: https://linkedin.com/in/nicknish
   pinterest:
   rss:
@@ -25,7 +25,7 @@ navigation:
   labs: /labs
   resume: https://standardresume.co/nicknish
   now: /now
-  blog: https://medium.com/@nicknish
+  # blog: https://medium.com/@nicknish
 
 links:
   bonsai: https://hellobonsai.com
